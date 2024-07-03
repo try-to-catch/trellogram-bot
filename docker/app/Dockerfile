@@ -31,4 +31,4 @@ RUN curl -sL https://deb.nodesource.com/setup_20.x | bash -
 RUN apt-get install -y nodejs
 
 # Set working directory
-WORKDIR /var/www/html/phoenix-cinema.live
+WORKDIR /var/www/html/trellogram-bot

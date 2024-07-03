@@ -3,7 +3,7 @@ services:
     image: nginx
     restart: always
     volumes:
-      - ./:/var/www/html/phoenix-cinema.live
+      - ./:/var/www/html/trellogram-bot
       - ./docker/nginx/conf.d.prod:/etc/nginx/conf.d
       - /etc/letsencrypt:/etc/letsencrypt
     ports:
@@ -29,7 +29,7 @@ services:
       context: .
       dockerfile: docker/app/Dockerfile
     volumes:
-      - ./:/var/www/html/phoenix-cinema.live
+      - ./:/var/www/html/trellogram-bot
     depends_on:
       - mysql
     container_name: app
