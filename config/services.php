@@ -34,5 +34,20 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'telegram' => [
+        'base_uri' => env('TELEGRAM_BASE_URI'),
+        'token' => env('TELEGRAM_TOKEN'),
+        'bot_username' => env('TELEGRAM_BOT_USERNAME'),
+        'webhook' => env('TELEGRAM_WEBHOOK'),
+        'chat_id' => env('TELEGRAM_CHAT_ID'),
+        'allowed_updates' => '["message"]',
+    ],
+    'trello' => [
+        'base_uri' => env('TRELLO_BASE_URI'),
+        'token' => env('TRELLO_TOKEN'),
+        'board_id' => env('TRELLO_BOARD_ID'),
+        'key' => env('TRELLO_KEY'),
+        'webhook' => env('TRELLO_WEBHOOK'),
+    ],
 
 ];
